@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" fill="#050505"/>
+  <path d="M8 8h48v48H8z" fill="none" stroke="#6c7cff" stroke-width="2"/>
+  <circle cx="50" cy="14" r="3" fill="#8b5cf6"/>
+  <text x="32" y="40" fill="#f4f4f0" font-family="ui-monospace,monospace" font-size="20" font-weight="700" text-anchor="middle">W/</text>
+</svg>

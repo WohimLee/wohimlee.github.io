@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wohim Lee’s personal site: selected work, experience, and things in progress.">
+    <meta name="theme-color" content="#050505">
+    <title>Wohim Lee — Engineer / Builder</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body data-page="home">
+    <a class="skip-link" href="#main" data-i18n="skip.main">Skip to main content</a>
+
+    <header class="site-header">
+      <a class="wordmark" href="index.html" aria-label="Wohim Lee home">
+        <span class="wordmark-box" aria-hidden="true">W/</span><span>WOHIM</span>
+      </a>
+      <nav class="site-nav" aria-label="Home" data-i18n-aria="nav.home">
+        <a href="#work" data-i18n="nav.work">Work</a>
+        <a href="#about" data-i18n="nav.about">About</a>
+        <a href="#experience" data-i18n="nav.experience">Experience</a>
+        <a href="resume.html" data-i18n="nav.resume">Resume</a>
+      </nav>
+      <div class="header-controls">
+        <button class="lang-toggle" type="button" data-lang-toggle hidden aria-pressed="false">
+          <span data-lang-zh>中</span><span aria-hidden="true">/</span><span data-lang-en>EN</span>
+        </button>
+        <button class="motion-toggle" type="button" data-motion-toggle hidden aria-pressed="true">
+          <span data-i18n="motion.label">Motion</span><i aria-hidden="true"></i><span data-motion-state>On</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="intro-title">
+        <canvas class="signal-canvas" id="signal-canvas" aria-hidden="true"></canvas>
+        <div class="hero-frame" aria-hidden="true"><span></span><span></span><span></span><span></span></div>
+        <div class="hero-inner">
+          <p class="eyebrow" data-i18n="hero.kicker">Personal system / signal online</p>
+          <!-- EDIT: Replace the name and positioning copy below. -->
+          <h1 id="intro-title"><span>WOHIM</span><span>LEE</span></h1>
+          <div class="hero-copy">
+            <p class="hero-role" data-i18n="hero.role">Engineer / builder</p>
+            <p class="hero-lede" data-i18n="hero.lede">Finding clearer structures inside complex systems.</p>
+            <p class="hero-note" data-i18n="hero.note">An index of work, experience, and ideas in progress. The content will grow; the structure stays honest.</p>
+            <div class="hero-actions">
+              <a class="action-link action-link-primary" href="#work"><span data-i18n="hero.workCta">View selected work</span><span aria-hidden="true">↘</span></a>
+              <a class="action-link" href="resume.html"><span data-i18n="hero.resumeCta">Read resume</span><span aria-hidden="true">↗</span></a>
+            </div>
+          </div>
+          <dl class="hero-status">
+            <div><dt data-i18n="hero.status">Current coordinates</dt><dd data-i18n="hero.location">Asia / Shanghai · UTC+8</dd></div>
+            <div><dt data-i18n="hero.focusLabel">Current focus</dt><dd data-i18n="hero.focus">systems → interfaces → lived experience</dd></div>
+          </dl>
+        </div>
+      </section>
+
+      <section class="section work-section" id="work" aria-labelledby="work-title">
+        <header class="section-header">
+          <div><p class="section-index" data-i18n="work.index">01 / Selected work</p><h2 id="work-title" data-i18n="work.title">Write experience as change.</h2></div>
+          <p class="section-side" data-i18n="work.inspect">Click to inspect</p>
+        </header>
+        <p class="section-intro" data-i18n="work.intro">Each project answers three questions: what constrained it, what decision changed it, and what became different afterward.</p>
+
+        <div class="project-log">
+          <!-- EDIT: Replace each placeholder project with a real case study. -->
+          <details class="project" id="project-alpha" name="work" open>
+            <summary>
+              <span class="project-code">A1</span>
+              <span class="project-name" data-i18n="project.alpha.name">Project Alpha</span>
+              <span class="project-type" data-i18n="project.alpha.type">Systems interface</span>
+              <span class="project-meta" data-i18n="work.roleYear">Role / Year</span>
+              <span class="project-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project-body">
+              <p class="project-thesis" data-i18n="project.alpha.thesis">Compress a real project into an engineering story that can be inspected.</p>
+              <ul class="diff-list">
+                <li class="diff-remove"><span aria-hidden="true">−</span><b class="sr-only" data-i18n="diff.constraint">Constraint:</b><span data-i18n="project.alpha.minus">A complex workflow had not yet become an interface people could understand.</span></li>
+                <li class="diff-add"><span aria-hidden="true">+</span><b class="sr-only" data-i18n="diff.change">Change:</b><span data-i18n="project.alpha.plus1">Replace this line with the design or engineering decision you owned.</span></li>
+                <li class="diff-add"><span aria-hidden="true">+</span><b class="sr-only" data-i18n="diff.result">Result:</b><span data-i18n="project.alpha.plus2">Add a verifiable change in efficiency, reliability, experience, or delivery quality.</span></li>
+              </ul>
+              <div class="project-footer"><span>stack: replace / with / yours</span><span data-i18n="work.casePending">Full case study to follow</span></div>
+            </div>
+          </details>
+
+          <details class="project" id="project-beta" name="work">
+            <summary>
+              <span class="project-code">B2</span><span class="project-name" data-i18n="project.beta.name">Project Beta</span>
+              <span class="project-type" data-i18n="project.beta.type">Edge tooling</span><span class="project-meta" data-i18n="work.roleYear">Role / Year</span><span class="project-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project-body">
+              <p class="project-thesis" data-i18n="project.beta.thesis">Move the tool closer to the problem and shorten the feedback loop.</p>
+              <ul class="diff-list">
+                <li class="diff-remove"><span aria-hidden="true">−</span><b class="sr-only" data-i18n="diff.constraint">Constraint:</b><span data-i18n="project.beta.minus">Describe the real constraint here instead of listing technologies.</span></li>
+                <li class="diff-add"><span aria-hidden="true">+</span><b class="sr-only" data-i18n="diff.change">Change:</b><span data-i18n="project.beta.plus1">Explain the trade-off you made and why.</span></li>
+                <li class="diff-add"><span aria-hidden="true">+</span><b class="sr-only" data-i18n="diff.result">Result:</b><span data-i18n="project.beta.plus2">Record the change and link to code, a demo, or the complete story.</span></li>
+              </ul>
+              <div class="project-footer"><span>stack: replace / with / yours</span><span data-i18n="work.casePending">Full case study to follow</span></div>
+            </div>
+          </details>
+
+          <details class="project" id="project-gamma" name="work">
+            <summary>
+              <span class="project-code">C3</span><span class="project-name" data-i18n="project.gamma.name">Project Gamma</span>
+              <span class="project-type" data-i18n="project.gamma.type">Developer platform</span><span class="project-meta" data-i18n="work.roleYear">Role / Year</span><span class="project-toggle" aria-hidden="true"></span>
+            </summary>
+            <div class="project-body">
+              <p class="project-thesis" data-i18n="project.gamma.thesis">Turn implicit system knowledge into infrastructure a team can share.</p>
+              <ul class="diff-list">
+                <li class="diff-remove"><span aria-hidden="true">−</span><b class="sr-only" data-i18n="diff.constraint">Constraint:</b><span data-i18n="project.gamma.minus">Describe the hardest uncertainty at the start of the project.</span></li>
+                <li class="diff-add"><span aria-hidden="true">+</span><b class="sr-only" data-i18n="diff.change">Change:</b><span data-i18n="project.gamma.plus1">Describe the part of the system and the key judgment you owned.</span></li>
+                <li class="diff-add"><span aria-hidden="true">+</span><b class="sr-only" data-i18n="diff.result">Result:</b><span data-i18n="project.gamma.plus2">Explain what later became faster, steadier, or easier.</span></li>
+              </ul>
+              <div class="project-footer"><span>stack: replace / with / yours</span><span data-i18n="work.casePending">Full case study to follow</span></div>
+            </div>
+          </details>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about" aria-labelledby="about-title">
+        <header class="section-header"><div><p class="section-index" data-i18n="about.index">02 / About</p><h2 id="about-title" data-i18n="about.title">Judgment is part of the work.</h2></div></header>
+        <div class="about-layout">
+          <!-- EDIT: Replace these paragraphs with a real short biography. -->
+          <div class="about-copy"><p data-i18n="about.p1">This will become a short introduction: the problems you solve, what you care about, and how previous experience shaped the way you work now.</p><p data-i18n="about.p2">A list of tools matters less than your standards—what must stay simple, what deserves depth, and what needs long-term care.</p></div>
+          <ol class="principles">
+            <li><span>01</span><div><h3 data-i18n="principle.1.title">Clarity before cleverness.</h3><p data-i18n="principle.1.body">A system has to be understandable before it deserves to expand.</p></div></li>
+            <li><span>02</span><div><h3 data-i18n="principle.2.title">Ship, observe, refine.</h3><p data-i18n="principle.2.body">Replace endless guessing with real feedback.</p></div></li>
+            <li><span>03</span><div><h3 data-i18n="principle.3.title">Document the why.</h3><p data-i18n="principle.3.body">Code keeps the result; documentation keeps the decision context.</p></div></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section experience-section" id="experience" aria-labelledby="experience-title">
+        <header class="section-header">
+          <div><p class="section-index" data-i18n="experience.index">03 / Experience</p><h2 id="experience-title" data-i18n="experience.title">A timeline designed to keep growing.</h2></div>
+          <a class="action-link" href="resume.html"><span data-i18n="experience.full">Full resume</span><span aria-hidden="true">↗</span></a>
+        </header>
+        <!-- EDIT: Replace template entries with actual roles, organizations, and dates. -->
+        <ol class="timeline">
+          <li><time data-i18n="experience.now">Now</time><div><h3 data-i18n="experience.current.title">Current role / team</h3><p data-i18n="experience.current.body">State the boundary of your responsibility and the change you are moving forward.</p></div><span data-i18n="experience.location">Location</span></li>
+          <li><time>20XX</time><div><h3 data-i18n="experience.previous.title">Previous role / organization</h3><p data-i18n="experience.previous.body">Keep the context that helps someone judge your work; put detail in the resume or project story.</p></div><span data-i18n="experience.location">Location</span></li>
+          <li class="timeline-next"><time>+</time><p data-i18n="experience.next">The next real entry will make this timeline yours rather than the template’s.</p></li>
+        </ol>
+      </section>
+
+      <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="section-index" data-i18n="contact.index">04 / Contact</p>
+        <h2 id="contact-title"><span data-i18n="contact.title1">If the problem is worth taking apart,</span><span data-i18n="contact.title2">we should talk.</span></h2>
+        <div class="contact-row"><a class="contact-link" href="https://github.com/WohimLee" rel="me"><span data-i18n="contact.github">GitHub / WohimLee</span><span aria-hidden="true">↗</span></a><p data-i18n="contact.note">Email and other contact channels can be added here when ready.</p></div>
+      </section>
+    </main>
+
+    <footer class="site-footer"><span>Wohim Lee · 2026</span><span data-i18n="footer.stack">Vanilla HTML / CSS / JavaScript</span><a href="#main"><span data-i18n="footer.top">Back to top</span> ↑</a></footer>
+  </body>
+</html>

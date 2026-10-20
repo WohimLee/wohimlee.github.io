@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wohim Lee’s bilingual resume.">
+    <meta name="theme-color" content="#050505">
+    <title>Resume — Wohim Lee</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script src="i18n.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body class="resume-page" data-page="resume">
+    <a class="skip-link" href="#resume-main" data-i18n="skip.main">Skip to main content</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html"><span class="wordmark-box" aria-hidden="true">W/</span><span>WOHIM</span></a>
+      <nav class="site-nav" aria-label="Resume navigation">
+        <a href="index.html" data-i18n="nav.back">Back home</a>
+        <a href="index.html#work" data-i18n="nav.work">Work</a>
+        <button class="print-button" type="button" onclick="window.print()" data-i18n="resume.print">Print / PDF</button>
+      </nav>
+      <div class="header-controls">
+        <button class="lang-toggle" type="button" data-lang-toggle hidden aria-pressed="false"><span data-lang-zh>中</span><span aria-hidden="true">/</span><span data-lang-en>EN</span></button>
+      </div>
+    </header>
+
+    <!-- EDIT: Replace every bracketed field with real resume content. -->
+    <main class="resume" id="resume-main">
+      <header class="resume-hero">
+        <div><p class="eyebrow" data-i18n="resume.kicker">Resume / Curriculum vitae</p><h1>WOHIM<br>LEE</h1><p class="resume-role" data-i18n="resume.role">[Your role / area of focus]</p></div>
+        <dl class="resume-contact">
+          <div><dt data-i18n="resume.locationLabel">Location</dt><dd>Asia / Shanghai · UTC+8</dd></div>
+          <div><dt>GitHub</dt><dd><a href="https://github.com/WohimLee">github.com/WohimLee</a></dd></div>
+          <div><dt data-i18n="resume.emailLabel">Email</dt><dd>[your@email.com]</dd></div>
+        </dl>
+      </header>
+
+      <section class="resume-section" aria-labelledby="summary-title"><h2 id="summary-title" data-i18n="resume.summary">Summary</h2><p class="resume-summary" data-i18n="resume.summaryBody">[Use 3–4 sentences to summarize your experience, the problems you solve well, and where you want to go deeper. Avoid a keyword pile.]</p></section>
+
+      <section class="resume-section" aria-labelledby="resume-experience-title">
+        <h2 id="resume-experience-title" data-i18n="resume.experience">Experience</h2>
+        <div class="resume-entries">
+          <article class="resume-entry"><div class="resume-entry-meta"><time data-i18n="resume.dateNow">20XX — Now</time><span data-i18n="resume.place">[City / Remote]</span></div><div><h3 data-i18n="resume.roleOrg">[Role] · [Team / Company]</h3><ul><li data-i18n="resume.bullet1">[Lead with what changed, then add the method and scope.]</li><li data-i18n="resume.bullet2">[One example that shows technical judgment or cross-team work.]</li><li data-i18n="resume.bullet3">[One verifiable change in quality, speed, scale, or experience.]</li></ul></div></article>
+          <article class="resume-entry"><div class="resume-entry-meta"><time data-i18n="resume.previousDate">20XX — 20XX</time><span data-i18n="resume.place">[City / Remote]</span></div><div><h3 data-i18n="resume.roleOrg">[Role] · [Team / Company]</h3><ul><li data-i18n="resume.previousBullet">[Keep the 2–3 points that best explain your growth.]</li></ul></div></article>
+        </div>
+      </section>
+
+      <section class="resume-section" aria-labelledby="resume-projects-title">
+        <h2 id="resume-projects-title" data-i18n="resume.projects">Selected projects</h2>
+        <div class="resume-projects"><article><span>A1</span><h3>Project Alpha</h3><p data-i18n="resume.projectPattern">[Problem → key decision → result]</p><small data-i18n="resume.techLink">[Technology / link]</small></article><article><span>B2</span><h3>Project Beta</h3><p data-i18n="resume.projectPattern">[Problem → key decision → result]</p><small data-i18n="resume.techLink">[Technology / link]</small></article></div>
+      </section>
+
+      <div class="resume-columns">
+        <section class="resume-section" aria-labelledby="skills-title"><h2 id="skills-title" data-i18n="resume.capabilities">Capabilities</h2><div><p data-i18n="resume.capabilityBody">[Domain] · [Domain] · [Domain]</p><p data-i18n="resume.toolBody">[Tool] · [Tool] · [Tool]</p></div></section>
+        <section class="resume-section" aria-labelledby="education-title"><h2 id="education-title" data-i18n="resume.education">Education</h2><p><strong data-i18n="resume.school">[School / Program]</strong><br><span data-i18n="resume.study">[Major / Focus] · [Year]</span></p></section>
+      </div>
+      <footer class="resume-footer"><a href="index.html">← <span data-i18n="nav.back">Back home</span></a><span data-i18n="resume.updated">Last updated: 2026-10</span></footer>
+    </main>
+  </body>
+</html>

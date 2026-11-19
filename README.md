@@ -21,3 +21,13 @@ Then open `http://localhost:8000`.
 - `404.html` — not-found page
 
 Search for `EDIT:` comments in the HTML to find the content that should be replaced first. Keep matching translations in both `zh` and `en` dictionaries in `i18n.js`; HTML contains the complete English no-JavaScript fallback. The site uses no framework, external font, or build step and can be served directly by GitHub Pages.
+
+## Publish updates
+
+Preview and verify your changes locally, then commit the files for the update. From `main`, use `git fetch origin` and `git log --oneline --left-right origin/main...HEAD` to confirm the remote has no commits missing locally and review the commits you are about to publish.
+
+```bash
+git push origin main
+```
+
+GitHub Pages deploys automatically after a push to `main`. Check the deployment for your commit in [GitHub Actions](https://github.com/WohimLee/wohimlee.github.io/actions), then verify the [live site](https://wohimlee.github.io/).

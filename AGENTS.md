@@ -1,3 +1,7 @@
+# Resume and project content
+
+- Before updating biography, work experience, resume, or project content, consult the sibling repository `../Wohim-Resume` as the reference source. Both repositories live under the same parent directory; on this machine, the reference repository is `/Users/wohim/Desktop/DockerVol/ubuntu22.04/wohim/GitHub-Wohim/Wohim-Resume`.
+
 # Publishing updates
 
 - After completing and validating a repository update, review the diff and commit only files that belong to the task.

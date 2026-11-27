@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Wohim Lee 的个人主页，聚焦多模态智能体与应用 AI 系统。">
+    <meta name="theme-color" content="#f7f8f5">
+    <title>Wohim Lee — 大模型架构师</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+      {% include homepages/academic.css %}
+    </style>
+    <script src="i18n.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body class="academic academic--{{ include.variant }}" data-page="academic">
+    <a class="skip-link" href="#main" data-i18n="skip.main">跳到主要内容</a>
+    <header class="site-header">
+      <a class="wordmark" href="index.html" data-i18n="academic.name">李和谦</a>
+      <nav aria-label="首页" data-i18n-aria="nav.home">
+        <a href="#work" data-i18n="nav.work">项目</a>
+        <a href="#about" data-i18n="nav.about">关于</a>
+        <a href="https://github.com/WohimLee">GitHub <span aria-hidden="true">↗</span></a>
+        <button class="lang-toggle" type="button" data-lang-toggle hidden aria-pressed="false">
+          <span data-lang-zh>中</span><span aria-hidden="true">/</span><span data-lang-en>EN</span>
+        </button>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="intro-title">
+        <div class="identity">
+          <h1 id="intro-title" lang="en">Wohim Lee</h1>
+          <p class="role" data-i18n="academic.role">大模型架构师</p>
+        </div>
+        <div class="bio" id="about">
+          <p class="intro" data-i18n="academic.intro">我做多模态智能体与应用 AI 系统，关注它们如何进入真实工作流，以及如何评估实际表现。</p>
+          <p class="education"><span lang="en">University of Sussex</span> · <span data-i18n="academic.degree">机器人与自主系统硕士</span></p>
+        </div>
+      </section>
+
+      <section class="work" id="work" aria-labelledby="work-title">
+        <h2 id="work-title" data-i18n="academic.work">精选项目</h2>
+        <div class="projects">
+          <details id="nexa" name="work"{% if include.variant == 'feature' %} open{% endif %}>
+            <summary><span class="project-name" lang="en">NEXA</span><span class="project-topic" data-i18n="academic.nexa.topic">实时多模态智能体</span></summary>
+            <p class="project-detail" data-i18n="academic.nexa.detail">面向日常生活与工作的跨端智能体，覆盖眼镜语音控制电脑与手机端对话。</p>
+          </details>
+          <details id="deepvogue" name="work">
+            <summary><span class="project-name" lang="en">DeepVogue</span><span class="project-topic" data-i18n="academic.deepvogue.topic">服装数据与模型评测</span></summary>
+            <p class="project-detail" data-i18n="academic.deepvogue.detail">参与服饰辅助设计系统的数据集建设、分类器训练与设计师盲评。</p>
+          </details>
+          <details id="ai-b2b" name="work">
+            <summary><span class="project-name" lang="en">AI-B2B</span><span class="project-topic" data-i18n="academic.ai-b2b.topic">跨境电商多智能体</span></summary>
+            <p class="project-detail" data-i18n="academic.ai-b2b.detail">面向跨境电商的数字业务员，应用于客户沟通、商品检索与推荐。</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span lang="en">Wohim Lee</span>
+      <div class="footer-links">
+        <a href="resume.html" data-i18n="academic.resume">简历</a>
+        <a href="https://github.com/WohimLee">GitHub <span aria-hidden="true">↗</span></a>
+      </div>
+    </footer>
+  </body>
+</html>

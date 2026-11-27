@@ -9,7 +9,7 @@
 
   let language = storage.get('site-language-v2');
   if (language !== 'zh' && language !== 'en') {
-    language = 'en';
+    language = root.lang.toLowerCase().startsWith('zh') ? 'zh' : 'en';
   }
 
   const text = (key) => translations[language]?.[key] ?? translations.zh?.[key] ?? key;

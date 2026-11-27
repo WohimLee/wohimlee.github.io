@@ -1,18 +1,34 @@
 # wohimlee.github.io
 
-A zero-dependency bilingual personal site: a black signal-field hero, bold identity-led typography, and project stories presented as engineering diffs.
+A bilingual personal site with three homepage designs and a shared resume.
+
+## Select the homepage
+
+Set `homepage_variant` in [`_config.yml`](_config.yml). GitHub Pages builds the selected version at `https://wohimlee.github.io/` on each push to `main`.
+
+| Value | Homepage |
+| --- | --- |
+| `black` | Original black homepage with a signal-field hero |
+| `academic-masthead` | Centered Baskerville masthead and three project columns |
+| `academic-feature` | Didot headline with the NEXA project open by default |
+
+To switch or roll back, edit the value, preview, and commit it to `main`. An absent or unrecognized value selects `black`. Jekyll keeps the homepage templates in `_includes/` and publishes the selected version as `/` and `/index.html`.
 
 ## Preview locally
 
+Install Jekyll with `gem install github-pages` if it is missing. Then run:
+
 ```bash
-python3 -m http.server 8000
+jekyll serve --destination /tmp/wohimlee-pages
 ```
 
-Then open `http://localhost:8000`.
+Open `http://localhost:4000`. Restart Jekyll after changing `_config.yml`.
 
 ## Where to edit
 
-- `index.html` — introduction, projects, about, experience, and contact
+- `index.html` — selects the homepage template
+- `_includes/homepages/black.html` — original homepage
+- `_includes/homepages/academic.html` and `academic.css` in the same folder — shared markup and styles for both academic designs
 - `resume.html` — printable resume content
 - `styles.css` — black visual system, responsive layout, and print rules
 - `i18n.js` — all Chinese and English interface copy
@@ -20,7 +36,7 @@ Then open `http://localhost:8000`.
 - `favicon.svg` — the local `W/` browser mark
 - `404.html` — not-found page
 
-Search for `EDIT:` comments in the HTML to find the content that should be replaced first. Keep matching translations in both `zh` and `en` dictionaries in `i18n.js`; HTML contains the complete English no-JavaScript fallback. The site uses no framework, external font, or build step and can be served directly by GitHub Pages.
+Search for `EDIT:` comments in the original homepage and resume to find existing placeholders. Keep matching translations in the `zh` and `en` dictionaries in `i18n.js`, and update the corresponding HTML defaults for visitors without JavaScript. The black homepage defaults to English and the academic homepages default to Chinese. All versions use the browser's saved language preference when available.
 
 ## Publish updates
 

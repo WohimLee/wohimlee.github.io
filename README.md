@@ -4,7 +4,7 @@ A bilingual personal site with three homepage designs and a shared resume.
 
 ## Select the homepage
 
-Set `homepage_variant` in [`_config.yml`](_config.yml). GitHub Pages builds the selected version at `https://wohimlee.github.io/` on each push to `main`.
+Use `academic-feature` as the baseline for homepage design and development. Set `homepage_variant` in [`_config.yml`](_config.yml) to select the live version. GitHub Pages builds that version at `https://wohimlee.github.io/` on each push to `main`.
 
 | Value | Homepage |
 | --- | --- |
